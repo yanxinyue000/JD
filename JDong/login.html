@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<script src="js/lib/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<header id="head">
+			<div class="wrap clear">
+				<div class="logo left"><img src="img/logo-201305-b.png"/></div>
+				<div class="logo-tit left"></div>
+			</div>
+		</header>
+		<section id="main">
+			<div class="bg-main">
+				<div class="login">
+					<div class="login-tit">账户登录</div>
+					<div class="login-form">
+						<form onsubmit="return false;" method="post">
+							<div class="form-item form-user">
+								<lable>用 户 名</lable>
+								<input type="text" name="username" id="username" class="field" placeholder="邮箱/用户名/已验证手机" value="" />
+							</div>
+							<div class="form-item form-user">
+								<lable>密　码</lable>
+								<input type="password" name="password" id="password" class="field" placeholder="密码" value="" />
+							</div>
+							<button id="btn" type="button" name="submit">登　录</button>
+						</form>
+					</div>
+					
+					<div class="regiser-wrap">
+						<div class="error">用户名密码错误</div>
+						<a href="register.html" target="_blank" class="regiser">立即注册</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<img src="img/images/images/test-footer-1_02.gif"/>
+		</footer>
+	</body>
+</html>

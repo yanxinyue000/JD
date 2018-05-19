@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<style type="text/css">
+			@font-face {
+				font-family:iconfont;
+				src: '../font/iconfont.ttf';
+			}
+		</style>
+		<script src="js/lib/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="head">
+			<div class="logo-wrap clear">
+				<a href="https://www.jd.com" class="logo"></a>
+				<div class="logo-tit">欢迎注册</div>
+				<div class="has-account">
+					已有账号？
+					<a href="#" class="login">请登录</a>
+				</div>
+			</div>
+		</header>
+		<section id="main">
+			<div class="main-wrap">
+				<div class="progress clear">
+					<div class="pro-step step-1">
+						<span class="step-pic pic-1"></span>
+						<p class="step-tishi tishi-1">验证手机号</p>
+					</div>
+					<div class="pro-line line-1"></div>
+					<div class="pro-step step-2">
+						<span class="step-pic pic-2">2</span>
+						<p class="step-tishi tishi-2">填写账号信息</p>
+					</div>
+					<div class="pro-line line-2"></div>
+					<div class="pro-step step-3">
+						<span class="step-pic pic-3">3</span>
+						<p class="step-tishi tishi-3">注册成功</p>
+					</div>
+				</div>
+				<div class="login-main">
+					<div class="reg-form">
+						<form action="php/reg.php" method="post">
+							<div class="form-item form-account" >
+								<lable>用　户　名</lable>
+								<input type="text" name="username" class="field" id="form-account" placeholder="你的账户名和登录名" maxlength="20" value="" default="<i class='i-def'></i>支持中文、英文、数字、“-”、“_”的组合，4-20个字符" />
+								<i class="i-status"></i>
+								<i class="i-cancel"></i>
+							</div>
+							<div class="input-tip">
+								<span id="account-error">
+									<!--<i class="i-error"></i>-->
+								</span>
+							</div>
+							
+							<div class="form-item form-pwd" >
+								<lable>设 置 密 码</lable>
+								<input type="password" name="password" class="field" id="form-password" placeholder="建议使用字母、数字和符号两种及以上" maxlength="20" value="" default="<i class='i-def'></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符" />
+								<i class="i-status"></i>
+								<i class="i-cancel"></i>
+								<div class="capslk-tips">
+									大写已开启
+								</div>
+							</div>
+							<div class="input-tip">
+								<span id="pwd-error">
+									<!--<i class="i-error"></i>-->
+								</span>
+							</div>
+							
+							
+							<div class="form-item form-repwd" >
+								<lable>确 认 密 码</lable>
+								<input type="password" name="regRepwd" class="field" id="form-repeatpwd" placeholder="请再次输入密码" value="" maxlength="20" default="<i class='i-def'></i>请再次输入密码" />
+								<i class="i-status"></i>
+								<i class="i-cancel"></i>
+								<div class="capslk-tips">
+									大写已开启
+								</div>
+							</div>
+							<div class="input-tip">
+								<span id="repwd-error">
+									<!--<i class="i-error"></i>-->
+								</span>
+							</div>
+							
+						<!--	<div class="form-item form-email" >
+								<lable>邮 箱 验 证</lable>
+								<input type="text" name="regEmail" class="field" id="form-email" placeholder="请输入邮箱" value="" default="<i class='i-def'></i>验证完成后，你可以使用该邮箱登录" />
+								<i class="i-status"></i>
+								<i class="i-cancel"></i>
+							</div>
+							<div class="input-tip">
+								<span id="email-error">
+								</span>
+							</div>
+							
+							<div class="form-item form-emailback clear" style="margin-bottom: 30px;">
+								<div class="mail-left left">
+									<lable>邮箱验证码</lable>
+									<input type="text" name="regEmailback" class="field mailback" id="form-emailback" placeholder="请输入邮箱验证码" value=""  />
+									<i class="i-status"></i>
+									<i class="i-cancel"></i>
+								</div>
+								<button class="email-btn" type="button">获取验证码</button>
+							</div>
+							-->
+							<div>
+								<button class="btn-register" id="form-register" type="submit" name="submit">立即注册</button>
+							</div>
+							<div class="input-tip">
+								<span id="register-error">
+									<!--<i class="i-error"></i>-->
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer"></footer>
+	</body>
+</html>

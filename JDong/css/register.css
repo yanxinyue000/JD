@@ -1,0 +1,268 @@
+.clear:after {
+  content: '';
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+  
+#head{
+	width: 100%;
+	height: 110px;
+	background: url(../img/headbg.jpg) repeat-x left bottom;
+}
+.logo-wrap{
+	width: 1210px;
+	margin: 0 auto;
+	
+}
+.logo{
+	width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    background: url(../img/icon.png) no-repeat;
+}
+.logo-tit{
+	float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 34px;
+}
+.has-account{
+	font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+}
+.login{
+	color: #e22;
+}
+
+
+.main-wrap{
+	width: 1210px;
+	margin: 0 auto;
+}
+.progress{
+	position: relative;
+    margin: 80px auto 0;
+    width: 400px;
+}
+.pro-step{
+	float: left;
+    text-align: center;
+    font-size: 14px;
+}
+.step-pic{
+	margin: 0 auto;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ccc;
+}
+.step-tishi{
+	color: #3b4;
+	margin-top: 10px;
+    font-size: 12px
+}
+.pro-line{
+	background-position: 0 -130px;
+	left: 55px;
+	width: 124px;
+	position: absolute;
+    top: 7px;
+    height: 10px;
+}
+.line-1{
+	background: url(../img/reg-icon.png) no-repeat;
+    background-position: 0 -130px;
+    left: 55px;
+}
+.line-2{
+	background: url(../img/reg-icon.png) no-repeat;
+    background-position: 0 -100px;
+    left: 228px;
+}
+.pic-1{
+	background: url(../img/reg-icon.png) no-repeat;
+}
+.step-2{
+	margin-left: 106px;
+   
+}
+.pic-2{
+	background: url(../img/reg-icon.png) no-repeat;
+	background-position: 0 -200px;
+	color: #fff;
+}
+.step-3{
+	margin-left: 112px;
+}
+.pic-3{
+	background: url(../img/reg-icon.png) no-repeat;
+	background-position: -45px -200px;
+	color: #ccc;
+}
+.tishi-3{
+	color: #ccc;
+}
+
+
+
+.login-main{
+	margin: 50px auto 186px;
+    width: 400px;
+}
+
+.form-item{
+	position: relative;
+    border: solid 1px #ddd;
+    width: 398px;
+    height: 52px;
+    font-size: 14px;
+}
+.form-item lable{
+	float: left;
+    width: 87px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #666666;
+}
+.field{
+	border: 0 none;
+    font-size: 14px;
+    width: 270px;
+    height: 19px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+    outline: none;
+}
+.i-status{
+	position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+    background: url(../img/icon.png) no-repeat;
+	background-position: 0 -117px;
+}
+.i-cancel{
+	background: url(../img/reg-icon.png) no-repeat;
+	background-position: -80px -160px;
+    position: absolute;
+    display: none;
+    width: 12px;
+    height: 12px;
+    top: 22px;
+    right: 20px;
+    cursor: pointer
+}
+.input-tip{
+	color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.i-error{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -17px -100px;
+}
+.i-def{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -100px;
+}
+.i-pwd-di{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -17px -134px;
+}
+.i-pwd-zhong{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -34px -117px;
+}
+.i-pwd-gao{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -34px -134px;
+}
+.capslk-tips{
+	right: 2px;
+    top: -35px;
+    position: absolute;
+    background: #fef4e5;
+    border: solid 1px #f6c090;
+    color: #bc5212;
+    display: none;
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 3px;
+    z-index: 11;
+}
+.mailback{
+	width: 152px;
+}
+.email-btn{
+	float: left;
+    width: 118px;
+    height: 52px;
+    border: 0;
+    border-left: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    padding: 0;
+}
+.mail-left{
+	position: relative;
+}
+.btn-register{
+	width: 100%;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+    background: #e2231a;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    cursor: pointer;
+}

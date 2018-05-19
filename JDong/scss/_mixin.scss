@@ -1,0 +1,19 @@
+@charset "utf-8";
+@mixin frame($color:#ffffff,$h:600px,$fontsize:80px,$bgcolor:white){//初始框架
+    color: $color;
+    height: $h;
+    text-align: center;
+    line-height: $h;
+    font-size: $fontsize;
+    background-color: $bgcolor;
+}
+@mixin wrapper($width:1190px){
+    width: $width;
+    margin: 0 auto;
+}
+@mixin triangle($width:5px,$color:#f6f6f6){
+    width: 0;
+    height: 0;
+    border: $width solid transparent;
+    border-bottom: $width solid $color;
+}
